@@ -19,7 +19,7 @@ const Header = ()=>{
   return(
     <header className='header'>
       <h1 className='title'><FontAwesomeIcon icon={faBook} /> Read Quotes</h1>
-      <p className='developer'>omid Tahmasebi Boldaji</p>
+      <p className='developer'>Omid Tahmasebi Boldaji</p>
     </header>
   )
 }
@@ -29,10 +29,9 @@ const Main = ()=>{
   const [author , setAuthor] = useState('')
 
   useEffect(()=>{
-    Axios.get('https://api.api-ninjas.com/v1/quotes').then((res)=>{
-      setQuote(res.data[0].quote)
-      setAuthor(res.data[0].author)
-    })
+
+    nextQuote()
+  
   } , [])
 
   const nextQuote = ()=>{

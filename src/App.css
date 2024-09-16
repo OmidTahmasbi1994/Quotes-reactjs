@@ -16,7 +16,7 @@
 }
 .quote
 {
-  font-size: 19px;
+  font-size: 18px;
 }
 .developer
 {
@@ -45,7 +45,7 @@
   color: slateblue;
   background: snow;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 .nextButton :active
 {
